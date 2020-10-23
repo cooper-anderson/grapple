@@ -1,0 +1,56 @@
+{
+  "name": "grapple",
+  "version": "0.1.0",
+  "main": "public/electron.js",
+  "author": {
+    "name": "Cooper Anderson",
+    "email": "cooper@cooperstuff.ninja",
+    "url": "https://github.com/cooper-anderson/grapple"
+  },
+  "repository": {
+    "url": "https://github.com/cooper-anderson/grapple"
+  },
+  "scripts": {
+    "start:react": "react-scripts start",
+    "start:electron": "electron .",
+    "start:devtools": "react-devtools",
+    "build": "npm run build:react && npm run build:electron",
+    "build:react": "react-scripts build",
+    "build:electron": "electron-builder --dir"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^3.33.0",
+    "@blueprintjs/icons": "^3.22.0",
+    "electron-is-dev": "^1.2.0",
+    "jquery": "^3.5.1",
+    "pixi.js": "^5.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0",
+    "electron-devtools-installer": "^3.1.1",
+    "node-sass": "^4.14.1",
+    "react-devtools": "^4.8.2",
+    "react-scripts": "^3.4.1",
+    "typescript": "^3.9.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
